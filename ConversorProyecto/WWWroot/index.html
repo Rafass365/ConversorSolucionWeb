@@ -3,143 +3,218 @@
 <head>
     <meta charset="utf-8" />
     <title>Rafaelito´s Currency converter</title>
-    <meta name="description"   content="Aplicacion de conversion de monedas"   />
-    <meta name="author"   content="Rafa"  />
-    <meta charset="utf-8"/>
+    <meta name="description" content="Aplicacion de conversion de monedas" />
+    <meta name="author" content="Rafa" />
+    <meta charset="utf-8" />
 
     <!--YTrae esta hoja de ESTILOS de esa URL-->
-    <link rel="stylesheet"  
+    <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
 </head>
 <body style=" background: #f3e1e1">
-
-    <!--<b>Hola Mundo</b>
-    <h2>Patatin</h2>
-    <h3>Patatan</h3>
-    <h4>Pataterin</h4>
-    <h5>paraterian</h5>
-    <h6>Potatoes</h6>
-    <br />-->
-    <br />
-    
-    
-
-    <!--Introduce código en HTML-->
-    <!--<script>
-        alert("Hola mundo!!!!!");
-    </script> 
-    <script>
-        var numero1 = 1;
-        var numero2 = 2;
-        if (numero2 > numero1) 
-        {
-            alert("numero 2 es mayor que numero 1");
-        }
-        else
-            {
-                alert("numero 1 es mayor que numero 2");
-            }
-        alert("Hola mundo!!!!!"+(numero1 + numero2));
-        
-    </script>-->
-
-    <p id="p2" class="lead">hola desde el conversor de monedas</P>
-    <p id="p1" name="p1n">de Acme</p>
-    <p id="p3" style="color:brown"; font-size: 1.25rem; font-weigth=600 >Conversor ACME 1.0</p>
-
-    <!-- Comentarios con ctrlK + ctrlc -->
-    <!--<div></div>    Establecen marcos de trabajo == Cajas de trabajo  -->
-    <div>
-        <!--<i id="01">Por favor, introduzca la moneda de destino</i>-->
-        <i style="color: green; background: #fbdcc6">
-            Por favor, introduzca la moneda de origen
-        </i>
-
-        <select style="background: #fbdcc6" id="moneda_origen" name="tipo_base" onchange="selecciona_moneda_origen()">
-            <option value="Euro">Euro</option>
-            <option value="Dolar">Dolar</option>
-            <option value="Libra">Libra Esterlina</option>
-        </select>
-    </div>
-
-    <br />   <!--Salto de linea-->
-    
-    <br />
-
-    <div>
-        <i style="color: #5e061f; background: #f3e1e1">
-            Por favor, introduzca la moneda de destino
-        </i> <!--italica-->
-        <select style="background: #f3e1e1" id="moneda_destino" name="tipo_base" onchange="selecciona_moneda_destino()">
-            <option value="Dolar">Dolar</option>
-            <option value="Libra">Libra Esterlina</option>
-            <option value="Euro">Euro</option>
-        </select>
-    </div>
-    <br /><br />
-    <div>
-        <i style="color: #5e061f; background: #9ae1a9">Por favor, introduzca la cantidad a convertir</i>
-        <input style="background: #9ae1a9" type="text" /> <!--cantidad a convertir -->
-        <br />
-    </div>
-    <div>
-        <br />
-        <i style="color: #5e061f; background: #8c94cb">La conversión da un resultado de:</i>
-        <!--<output type="text">-->
-        <input style="background: #8c94cb" type="text" /> <!--cantidad a convertir -->
-        <br />
-    </div>
-    <br />   <!--Salto de linea-->
-    <p>Parrafo</p> <!-- Parrafo <p> Parrafo </P>-->
-    <br />   <!--Salto de linea-->
-    <h1>Conversor de Monedas ACME V1.0</h1>
-    <br />   <!--Salto de linea-->
-
-    <h2>Lista de monedas permitidas</h2>
-    <ul>
-        <li><!--<img src="eurologo.png" width="25" height="150" />-->Euro (EUR)</li>
-        <li>Dolar (USR)</li>
-        <li>Libra (GBP)</li>
-    </ul>
-
-    <img src="https://lh3.googleusercontent.com/6wr4z-Az56tbunqZMy8AMw1g2bEinwGpK0uZ3lw2ts3VOizNMbjLpMIgvXpwR9i0O7ZQ1cDfU0nycOS5M4iKv4WEG7A=w220-h140-e365-rj-sc0x00ffffff" width="250" height="250" alt="Euro (EUR)" />
-    <br />
-
-    <img src="eurologo.png" width="150" height="150" />
-    <!--Pedir moneda destino-->
-    <div>
-        <i>Por favor, introduzca la moneda de origen</i>
-        <br />
-        <p>Moneda Origen: </p>
-        <input type="text" />
-    </div>
-
-    <!--Pedir moneda destino-->
-    <div>
-        <i id="01">Por favor, introduzca la moneda de destino</i>
-        <br />
-        <p>Moneda Destino: </p>
-        <input type="text" />
-    </div>
-
-
-    <article>
-        <header>
-            <h1>Aplicación de conversión de divisas</h1>
+    <div class="container">
+        <header class="jumbotron"> <!--jumbotron de BOOTSTRAP-->
+            <h1>Conversor de Monedas ACME 1.0</h1>
+            <h2>Convertimos entre mas de 150 monedas</h2>
+            <nav>
+                <ul>
+                    <li><a href="monedas.html">Monedas</a></li>
+                    <li><a href="conversor de moneda.html">Conversor de moneda</a> </li>
+                    <li><a href="contacto.html">Contacte con nosotros</a></li>
+                </ul>
+            </nav>
         </header>
-        <p>En Mayo 05 de 2023, Conversor oficial de divisas</p>
-    </article>
-    <section>
-        Sección 1
+        <!--<b>Hola Mundo</b>
+        <h2>Patatin</h2>
+        <h3>Patatan</h3>
+        <h4>Pataterin</h4>
+        <h5>paraterian</h5>
+        <h6>Potatoes</h6>
+        <br />-->
         <br />
-        <a href="mailto:patatin@joe.com">mailto:patatin@joe.com</a>
-    </section>
+
+
+
+        <!--Introduce código en HTML-->
+        <!--<script>
+            alert("Hola mundo!!!!!");
+        </script>
+        <script>
+            var numero1 = 1;
+            var numero2 = 2;
+            if (numero2 > numero1)
+            {
+                alert("numero 2 es mayor que numero 1");
+            }
+            else
+                {
+                    alert("numero 1 es mayor que numero 2");
+                }
+            alert("Hola mundo!!!!!"+(numero1 + numero2));
+
+        </script>-->
+
+        <p id="p2" class="lead">hola desde el conversor de monedas</p>
+        <p id="p1" name="p1n">de Acme</p>
+        <p id="p3" style="color:brown" ; font-size: 1.25rem; font-weigth=600>Conversor ACME 1.0</p>
+
+        <!-- Comentarios con ctrlK + ctrlc -->
+        <!--<div></div>    Establecen marcos de trabajo == Cajas de trabajo  -->
+        <div>
+            <!--<i id="01">Por favor, introduzca la moneda de destino</i>-->
+            <i style="color: green; background: #fbdcc6">
+                Por favor, introduzca la moneda de origen
+            </i>
+
+            <select style="background: #fbdcc6" id="moneda_origen" name="tipo_base" onchange="selecciona_moneda_origen()">
+                <option value="Euro">Euro</option>
+                <option value="Dolar">Dolar</option>
+                <option value="Libra">Libra Esterlina</option>
+            </select>
+        </div>
+
+        <br />   <!--Salto de linea-->
+
+        <br />
+
+        <div>
+            <i style="color: #5e061f; background: #f3e1e1">
+                Por favor, introduzca la moneda de destino
+            </i> <!--italica-->
+            <select style="background: #f3e1e1" id="moneda_destino" name="tipo_base" onchange="selecciona_moneda_destino()">
+                <option value="Dolar">Dolar</option>
+                <option value="Libra">Libra Esterlina</option>
+                <option value="Euro">Euro</option>
+            </select>
+        </div>
+        <br /><br />
+        <div>
+            <i style="color: #5e061f; background: #9ae1a9">Por favor, introduzca la cantidad a convertir</i>
+            <input style="background: #9ae1a9" type="text" /> <!--cantidad a convertir -->
+            <br />
+        </div>
+        <div>
+            <br />
+            <i style="color: #5e061f; background: #8c94cb">La conversión da un resultado de:</i>
+            <!--<output type="text">-->
+            <input style="background: #8c94cb" type="text" /> <!--cantidad a convertir -->
+            <br />
+        </div>
+        <br />   <!--Salto de linea-->
+        <p>Parrafo</p> <!-- Parrafo <p> Parrafo </P>-->
+        <br />   <!--Salto de linea-->
+        <h1>Conversor de Monedas ACME V1.0</h1>
+        <br />   <!--Salto de linea-->
+
+        <h2>Lista de monedas permitidas</h2>
+        <ul>
+            <li><!--<img src="eurologo.png" width="25" height="150" />-->Euro (EUR)</li>
+            <li>Dolar (USR)</li>
+            <li>Libra (GBP)</li>
+        </ul>
+
+        <img src="https://lh3.googleusercontent.com/6wr4z-Az56tbunqZMy8AMw1g2bEinwGpK0uZ3lw2ts3VOizNMbjLpMIgvXpwR9i0O7ZQ1cDfU0nycOS5M4iKv4WEG7A=w220-h140-e365-rj-sc0x00ffffff" width="250" height="250" alt="Euro (EUR)" />
+        <br />
+
+        <img src="eurologo.png" width="150" height="150" />
+        <!--Pedir moneda destino-->
+        <div>
+            <i>Por favor, introduzca la moneda de origen</i>
+            <br />
+            <p>Moneda Origen: </p>
+            <input type="text" />
+        </div>
+
+        <!--Pedir moneda destino-->
+        <div>
+            <i id="01">Por favor, introduzca la moneda de destino</i>
+            <br />
+            <p>Moneda Destino: </p>
+            <input type="text" />
+        </div>
+        <br />
+        <br />
+        <br />
+
+        <table class="table table-striped table-bordered table-hover">
+            <!-- ESTILO TABLAS bootstrap-->
+            <!--Titulo-->
+            <caption>Histórico de conversión de monedas</caption>
+            <!--Cabecera-->
+            <thead>
+                <tr>
+                    <th colspan="4">Historico Conversion</th> <!--Agrupar 4 columnas-->
+                    <th>1.0</th>
+                </tr>
+                <tr>
+                    <th>Moneda Origen</th>
+                    <th>Moneda Destino</th>
+                    <th>Fecha</th>
+                    <th>Valor</th>
+                    <th>Resultado</th>
+                </tr>
+            </thead>
+
+            <!--CUERPO DE LA TABLA-->
+
+            <tbody>
+                <tr>
+                    <td>EUR</td>
+                    <td>GBP</td>
+                    <td>9/5/2023</td>
+                    <td>100</td>
+                    <td>110</td>
+                </tr>
+                <tr>
+                    <td>USD</td>
+                    <td>EUR</td>
+                    <td>8/5/2023</td>
+                    <td>200</td>
+                    <td>180</td>
+                </tr>
+                <tr>
+                    <td>EUR</td>
+                    <td>GBP</td>
+                    <td>7/5/2023</td>
+                    <td>500</td>
+                    <td>680</td>
+                </tr>
+            </tbody>
+
+            <!--FOOTER DE LA TABLA-->
+
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total</td>
+                    <td>2000</td>
+                    <td>2500</td>
+                </tr>
+            </tfoot>
+        </table>
+
+
+        <br />
+        <br />
+        <br />
+
+
+        <article>
+            <header>
+                <h1>Aplicación de conversión de divisas</h1>
+            </header>
+            <p>En Mayo 05 de 2023, Conversor oficial de divisas</p>
+        </article>
+        <section>
+            Sección 1
+            <br />
+            <a href="mailto:patatin@joe.com">mailto:patatin@joe.com</a>
+        </section>
 
 
 
 
-    <footer>Pie de página o footer</footer>
-
+        <footer>Pie de página o footer</footer>
+    </div>
 </body>
 </html>

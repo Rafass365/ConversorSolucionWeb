@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Conversor de moneda</title>
+    <meta name="description" content="Aplicacion de conversion de monedas" />
+    <meta name="author" content="Grupo 3" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+<body>
+    <header class="jumbotron">
+        <!--jumbotron de BOOTSTRAP-->
+
+
+        <table class="table table-striped  table-hover">
+            <!-- ESTILO TABLAS bootstrap-->
+            <!--Titulo-->
+            <!--<caption>Histórico de conversión de monedas</caption>-->
+            <!--Cabecera-->
+            <thead>
+                <tr style="background-color: orange; color: white">
+                    <th style="font-size:2;font-size: larger;">Conversor Plus</th> <!--Agrupar 4 columnas-->
+                    <th><a style="color: white" href="index.html">Home</a></th>
+                    <th><a style="color: white" href="monedas.html">Monedas</a></th>
+                    <th>Conversor</th>
+                    <th>About</th>
+                    <th><a style="color: white" href="contacto.html">Contact</a></th>
+                    <th><img src="img\OIP.jpg" alt="User" width="32" height="32" />Usuario</th>
+                    <th>LogIn</th>
+                </tr>
+            </thead>
+        </table>
+    </header>
+
+
+    <div style="margin: 50px, 100px, 50px, 100px;display: inline-block;margin-left: 50px;" class="jumbotron">
+
+        <div>
+            <!--<i id="01">Por favor, introduzca la moneda de origen</i>-->
+            <i style="color: green; ">
+                Por favor, introduzca la moneda de origen
+            </i>
+        </div>
+
+        <div>
+            <select style="background: #fbdcc6; margin-left: 100px;" id="moneda_origen" name="tipo_base" onchange="selecciona_moneda_origen()">
+                <option value="Euro">Euro</option>
+                <option value="Dolar">Dolar</option>
+                <option value="Libra">Libra Esterlina</option>
+            </select>
+        </div>
+
+        <div>
+            <!--<i id="01">Por favor, introduzca la moneda de destino</i>-->
+            <i style="color: green;">
+                Por favor, introduzca la moneda de destino
+            </i>
+        </div>
+        <div>
+            <select style="background: #fbdcc6; margin-left: 100px;" id="moneda_destino" name="tipo_base" onchange="selecciona_moneda_destino()">
+                <option value="Euro">Dolar</option>
+                <option value="Dolar">Libra Esterlina</option>
+                <option value="Libra">Euro</option>
+            </select>
+        </div>
+
+        <div>
+            <i id="01">Por favor, introduzca la cantidad a convertir</i>
+            <br />
+
+            <input style="margin-left: 75px;" styletype="text" />
+        </div>
+
+
+        <div>
+            <i style="margin-left: 50px;" id="01">El resultado de la conversión es:</i>
+            <br />
+
+            <input style="margin-left: 75px;" styletype="text" />
+        </div>
+
+    </div>
+
+
+    <div style="margin: 50px, 100px, 50px, 100px;display: inline-block;margin-left: 50px;" class="jumbotron">
+        <i style="margin-left: 50px;" id="01">El resultado de la conversión es:</i>
+        <br />
+
+        <input style="margin-left: 75px;" styletype="text" />
+    </div>
+
+
+    <!--CUERPO DE LA TABLA-->
+    <!--FOOTER DE LA TABLA-->
+
+
+
+
+
+</body>
+</html>
+
